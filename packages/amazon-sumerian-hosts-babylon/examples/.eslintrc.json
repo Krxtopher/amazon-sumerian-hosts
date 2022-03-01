@@ -1,0 +1,23 @@
+{
+  "globals": {
+    "AWS": true,
+    "BABYLON": true,
+    "HOST": true
+  },
+  "rules": {
+    "import/extensions": [
+      "error",
+      "always"
+    ],
+    "no-new": "off",
+    "prefer-destructuring": [
+      "error",
+      {
+        "AssignmentExpression": {
+          "array": false,
+          "object": false
+        }
+      }
+    ]
+  }
+}

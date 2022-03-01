@@ -191,9 +191,9 @@
 
       async function main() {
         // Initialize AWS and create Polly service objects
-        window.AWS.config.region = 'us-west-2';
+        window.AWS.config.region = 'us-east-1';
         window.AWS.config.credentials = new AWS.CognitoIdentityCredentials({
-          IdentityPoolId: '<Enter Cognito Identity Pool ID here>',
+          IdentityPoolId: 'us-east-1:9ca92f95-1959-4ceb-9206-b1d0549a0cce',
         });
         const polly = new AWS.Polly();
         const presigner = new AWS.Polly.Presigner();
@@ -861,6 +861,8 @@
         const emoteSelect = document.getElementById('emotes');
         emoteSelect.length = 0;
         const emotes = host.AnimationFeature.getAnimations('Emote');
+        const gestures = host.AnimationFeature.getAnimations('Gesture');
+        console.log(gestures);
         emotes.forEach((emote, i) => {
           const emoteOption = document.createElement('option');
           emoteOption.text = emote;
