@@ -21,8 +21,21 @@ select {
   backdrop-filter: saturate(120%);
 }
 
+button {
+  background-color: #45454544;
+  width: 100%;
+  border: none;
+  padding: 0.2em 0.5em;
+  border-radius: 4px;
+  backdrop-filter: saturate(120%);
+}
+
 .hide {
   display: hidden;
+}
+
+.loading {
+  opacity: 0;
 }
 
 #loadingScreen {
