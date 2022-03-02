@@ -514,8 +514,10 @@ function getCharacterConfig(assetsPath, characterId) {
   const characterConfigs = new Map();
 
   characterTypeMap.forEach((characterType, characterId) => {
+    // Convert char ID to lowercase to match filenames on disk.
+    const characterIdLower = characterId.toLowerCase();
     const characterConfig = {
-      modelUrl: `${assetsPath}/characters/${characterType}/${characterId}/${characterId}.gltf`,
+      modelUrl: `${assetsPath}/characters/${characterType}/${characterIdLower}/${characterIdLower}.gltf`,
       gestureConfigUrl: `${assetsPath}/animations/${characterType}/gesture.json`,
       pointOfInterestConfigUrl: `${assetsPath}/animations/${characterType}/poi.json`,
       animStandIdleUrl: `${assetsPath}/animations/${characterType}/stand_idle.glb`,
