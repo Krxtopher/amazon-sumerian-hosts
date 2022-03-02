@@ -50,7 +50,8 @@ function initUi() {
 }
 
 function speak() {
-  host.TextToSpeechFeature.play("Hello world. I'm a Sumerian host.");
+  const speech = document.getElementById('speechText').value;
+  host.TextToSpeechFeature.play(speech);
 }
 
 export default createScene;

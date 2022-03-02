@@ -1,0 +1,5 @@
+@import url('example-base.css');
+
+#speechText {
+  resize: both;
+}
