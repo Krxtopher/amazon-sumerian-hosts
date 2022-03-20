@@ -53,14 +53,15 @@ async function createScene() {
 
   initUi();
 
-  enableMicrophone();
+  try {
+    await lex.enableMicInput();
+  } catch (e) {
+    console.log('mic check failed');
+    console.log(e);
+  }
+
 
   return scene;
-}
-
-async function enableMicrophone() {
-  const result = await lex.enableMicInput();
-  console.log(result);
 }
 
 function initUi() {

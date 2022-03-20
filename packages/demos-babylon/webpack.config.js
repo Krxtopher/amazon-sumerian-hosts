@@ -25,6 +25,7 @@ module.exports = {
     helloWorldDemo: './src/helloWorldDemo.js',
     gesturesDemo: './src/gesturesDemo.js',
     customCharacterDemo: './src/customCharacterDemo.js',
+    chatbotDemo: './src/chatbotDemo.js',
   },
   output: {
     filename: '[name].bundle.js',

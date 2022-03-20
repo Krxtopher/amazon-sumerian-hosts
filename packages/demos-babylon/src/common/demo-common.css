@@ -40,10 +40,10 @@ textarea {
 button {
   background-color: #202020cc;
   width: 100%;
-  padding: 0.5em 0.5em 0.6em;
+  padding: 0.5em 1em 0.6em;
   border-radius: 4px;
   backdrop-filter: saturate(120%);
-  transition: 0.25s;
+  transition: 0.22s;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 85%;
@@ -96,7 +96,13 @@ canvas#renderCanvas {
 
 .dialog {
   background-color: #202020e0;
+  max-width: 500px;
   box-shadow: 0 0 20px #00000066;
+}
+
+.dialog h2 {
+  font-size: 120%;
+  text-align: center;
 }
 
 .dialog button {
@@ -117,7 +123,7 @@ canvas#renderCanvas {
   margin-top: 0;
 }
 
-.panel>*:last-child {
+.panel>*:last-child, .dialog>*:last-child {
   margin-bottom: 0;
 }
 
@@ -132,6 +138,7 @@ canvas#renderCanvas {
   font-weight: 200;
   font-style: italic;
   color: #ffffff99;
+  hyphens: auto;
 }
 
 span.label {
