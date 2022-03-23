@@ -27,10 +27,10 @@
 
       <div id="uiScreens">
         <!-- Screen displayed while microphone is being initialized. -->
-        <div id="micInitScreen" class="modalScreen"></div>
+        <!-- <div id="micInitScreen" class="modalScreen hide"></div> -->
 
         <!-- Screen displayed after loading completes. -->
-        <div id="startScreen" class="modalScreen hide">
+        <div id="startScreen" class="modalScreen">
           <div id="startDialog" class="dialog">
             <h2>Welcome to the Chatbot Demo</h2>
             <button id="startButton">Start</button>
@@ -46,7 +46,7 @@
         </div>
 
         <!-- Screen displayed if the user has blocked microphone access. -->
-        <div id="micDisabledScreen" class="modalScreen hide">
+        <!-- <div id="micDisabledScreen" class="modalScreen hide">
           <div class="dialog">
             <p>
               You have disabled microphone access for this website. Please
@@ -54,31 +54,31 @@
               reload this page.
             </p>
           </div>
-        </div>
+        </div> -->
 
         <!-- Screen displayed if the user has dismissed the microphone access dialog. -->
-        <div id="micDialogDismissedScreen" class="modalScreen hide">
+        <!-- <div id="micDialogDismissedScreen" class="modalScreen hide">
           <div class="dialog">
             <p>
               Microphone access is required for this demo.
             </p>
             <button id="enableMicButton">Allow microphone</button>
           </div>
-        </div>
-      </div>
+        </div> -->
 
-      <!-- Screen displayed during chatbot interaction. -->
-      <div id="chatbotUiScreen" class="hide">
-        <div id="uiPanel" class="panel">
-          <div class="instructions">
-            <p>Press and hold the button below to speak to the host.</p>
+        <!-- Screen displayed during chatbot interaction. -->
+        <div id="chatbotUiScreen" class="hide">
+          <div id="uiPanel" class="panel">
+            <div class="instructions">
+              <p>Press and hold the button below to speak to the host.</p>
+            </div>
+            <button id="talkButton">Push To Talk</button>
           </div>
-          <button id="talkButton">Push To Talk</button>
-        </div>
-        <div id="transcript" class="noChildPointerEvents hide">
-          <div class="textOverlay">
-            <div class="label">The chatbot thinks you said...</div>
-            <div id="transcriptText">I'd like to rent a car</div>
+          <div id="transcript" class="noChildPointerEvents hide">
+            <div class="textOverlay">
+              <div class="label">The chatbot thinks you said...</div>
+              <div id="transcriptText">I'd like to rent a car</div>
+            </div>
           </div>
         </div>
       </div>

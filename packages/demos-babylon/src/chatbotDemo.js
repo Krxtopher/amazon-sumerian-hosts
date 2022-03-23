@@ -74,7 +74,7 @@ function initUi() {
 
 function startMainExperience() {
   document.getElementById('startScreen').classList.add('hide');
-  document.getElementById('ui').classList.remove('hide');
+  document.getElementById('chatbotUiScreen').classList.remove('hide');
 
   host.TextToSpeechFeature.play(
     `Hello. How can I help? You can say things like, "I'd like to rent a car," or, "Help me book a hotel".`
